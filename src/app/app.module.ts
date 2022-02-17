@@ -14,9 +14,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent 
-    
-      },
+      { path: '', component: ProductListComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent},
     ])
   ],
   declarations: [
